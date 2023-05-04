@@ -1,0 +1,247 @@
+@import "https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap";
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: inter, sans-serif;
+  background: white;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  cursor: default;
+  overflow: hidden;
+  user-select: none;
+  animation: nada 0.5s, 1.4s 0.5s bodyStart cubic-bezier(0, 0.5, 0.1, 1);
+}
+
+* {
+  transition: all 0.5s cubic-bezier(0, 0.5, 0.5, 1);
+}
+
+#headerContent {
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: 10px;
+}
+
+#logo img {
+  margin-left: 10px;
+  height: 80px;
+  display: inline-block;
+  border-radius: 15px;
+  transform: scale(1);
+}
+
+#logo:hover img {
+  transform: scale(0.9);
+}
+
+#headerLinks {
+  display: inline-block;
+  margin-left: 20px;
+  margin-top: -65px;
+  vertical-align: middle;
+}
+
+#headerLinks a {
+  margin: 0 10px;
+  font-size: 200%;
+  text-decoration: none;
+  color: white;
+}
+
+#headerLinks div {
+  display: inline-block;
+}
+
+#inicio {
+  transform: scale(1);
+}
+
+#inicio a{
+  color: #181818;
+}
+
+#inicio:hover {
+  transform: scale(1.1);
+}
+
+#inicio:active {
+  transform: scale(0.9);
+}
+
+#aboutme {
+  transform: scale(1);
+}
+
+#aboutme a{
+  color: #181818;
+}
+
+#aboutme:hover {
+  transform: scale(1.1);
+}
+
+#aboutme:hover a {
+  color: #da00ff;
+}
+
+#aboutme:active {
+  transform: scale(0.9);
+}
+
+#projects {
+  transform: scale(1);
+}
+
+#projects a{
+  color: #181818;
+}
+
+#projects:hover {
+  transform: scale(1.1);
+}
+
+#projects:hover a {
+  color: #838383;
+}
+
+#projects:active {
+  transform: scale(0.9);
+}
+
+#social {
+  transform: scale(1);
+}
+
+#social a{
+  color: #181818;
+}
+
+#social:hover {
+  transform: scale(1.1);
+}
+
+#social:hover a {
+  color: #1da1f2;
+}
+
+#social:active {
+  transform: scale(0.9);
+}
+
+#line {
+  margin-top: 6px;
+  width: 100%;
+  height: 2px;
+  background: #181818;
+}
+
+@keyframes bodyStart {
+  from {
+    transform: scale(0);
+    filter: blur(25px);
+  }
+  to {
+    transform: scale(1);
+    filter: blur(0px);
+  }
+}
+
+@keyframes nada {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+#content {
+  background: #efefef;
+  width: 90%;
+  height: 80vh;
+  margin: 0 auto;
+  margin-top: 35px;
+  border-radius: 25px;
+}
+
+#text {
+  display: inline-block;
+  position: relative;
+  top: 30px;
+  margin-left: 30px;
+  color: #181818;
+  font-size: 15px;
+}
+
+#text a {
+  text-decoration: none;
+  color: #7ED2F8;
+}
+
+#contactMe {
+  display: inline-block;
+  position: relative;
+  top: 30px;
+  margin-left: 30px;
+  color: #818181;
+  font-size: 15px;
+}
+
+#contactMe a {
+  text-decoration: none;
+  color: #4BC0F6;
+}
+
+#hymoonText {
+  position: absolute;
+  text-decoration: none;
+  color: #181818;
+  font-size: 5vh;
+  margin-top: 14vh;
+  font-family: "Lucida Console", "Courier New", monospace;
+  text-align: center;
+}
+
+#hymoonLogo {
+  display: block;
+  object-fit: cover;
+  width: 671px;
+  height: 340px;
+}
+
+#hymoonText:hover {
+  transform: scale(1.1);
+}
+
+#hymoonText:active {
+  transform: scale(0.9);
+}
+
+
+#zengText {
+  position: absolute;
+  text-decoration: none;
+  color: #181818;
+  font-size: 5vh;
+  margin-top: 14vh;
+  margin-left: calc(671px + 35vh);
+  font-family: "Lucida Console", "Courier New", monospace;
+  text-align: center;
+}
+
+#zengLogo {
+  display: block;
+  object-fit: cover;
+  width: 671px;
+  height: 340px;
+}
+
+#zengText:hover {
+  transform: scale(1.1);
+}
+
+#zengText:active {
+  transform: scale(0.9);
+}
