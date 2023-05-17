@@ -219,7 +219,6 @@ body {
   transform: scale(0.9);
 }
 
-
 #zengText {
   position: absolute;
   text-decoration: none;
@@ -243,5 +242,9 @@ body {
 }
 
 #zengText:active {
+  transform: scale(0.9);
+}
+
+#zeng:hover ~ #hymoon #hymoonText {
   transform: scale(0.9);
 }
